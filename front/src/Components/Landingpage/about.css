@@ -1,0 +1,136 @@
+/* Container */
+.about {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  gap: 2rem;
+  scroll-margin-top: 80px; /* for smooth scrolling with fixed navbar */
+}
+
+/* Left side: Image */
+.about-left {
+  flex-basis: 40%;
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+.play-icon {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.play-icon:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Right side: Text */
+.about-right {
+  flex-basis: 56%;
+}
+
+/* Subheading */
+.about h3 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #212EA0;
+  margin-bottom: 8px;
+}
+
+/* Main heading */
+.about h2 {
+  font-size: 35px;
+  color: #000F38;
+  margin: 10px 0;
+  max-width: 400px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Gradient text effect for keywords */
+.about h2 .gradient-text {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraphs */
+.about p {
+  color: #676767;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about p:hover {
+  color: #ff7f50;
+  transform: translateX(5px);
+}
+
+/* Call-to-action button */
+.about-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Media query for responsiveness */
+@media(max-width: 800px){
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-left {
+    flex-basis: 100%;
+    margin: 20px 0;
+  }
+
+  .about-right {
+    flex-basis: 100%;
+  }
+
+  .about h2 {
+    max-width: 100%;
+  }
+}
+.about h2 {
+  font-size: 38px; /* slightly bigger */
+  color: #000F38;
+  margin: 10px 0;
+  max-width: 100%; /* remove previous 400px constraint */
+  width: 100%; /* take full width of right section */
+  line-height: 1.2;
+  font-weight: 700;
+}
+html {
+  scroll-behavior: smooth;
+}

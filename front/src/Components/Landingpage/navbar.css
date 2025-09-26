@@ -1,0 +1,102 @@
+/* Reset & Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: #0f172a;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh; /* Each section takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  scroll-snap-align: start;
+}
+
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15,23,42,0.95);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 70px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  height: 2.5em;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ccc6c2;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f97316;
+}
+
+.btn-primary {
+  background: #f97316;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background: #fb923c;
+  transform: scale(1.05);
+}
+

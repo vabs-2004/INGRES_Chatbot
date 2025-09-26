@@ -1,0 +1,10 @@
+.dashboard {
+  padding: 20px;        
+}
+
+.section-2{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+

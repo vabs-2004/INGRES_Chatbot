@@ -1,0 +1,29 @@
+.section2A{
+  border-top: 1px solid #ccc;
+  background-color: #1e1e2f;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 55%;
+}
+
+.section2A select {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #2a2a40;
+  color: #fff;
+}
+
+.section2A select:hover,
+.section2A select:focus {
+  border-color: #8884d8;
+  outline: none;
+}
+
+.recharts-tooltip-wrapper {
+  background-color: #2a2a40 !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}

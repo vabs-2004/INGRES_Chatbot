@@ -1,0 +1,25 @@
+
+.section2{
+  border-top: 1px solid #ccc;
+  background-color: #1e1e2f;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 45%;
+}
+
+
+.section2 select {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #2a2a40;
+  color: #fff;
+}
+
+.section2 select:hover,
+.section2 select:focus {
+  border-color: #8884d8;
+  outline: none;
+}

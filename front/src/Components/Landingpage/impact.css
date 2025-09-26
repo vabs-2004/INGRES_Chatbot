@@ -1,0 +1,37 @@
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* fixed 3 columns */
+  gap: 1rem;
+}
+
+
+.impact-card {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 1.2rem;
+  border-radius: 14px;
+  transition: 0.3s;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.impact-card:hover {
+  transform: translateY(-6px);
+}
+
+.impact-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.blue { color: #3b82f6; }
+.green { color: #22c55e; }
+.purple { color: #a855f7; }
+
+.section {
+    min-height: 80vh;
+    padding: 15.5rem 2rem;
+    text-align: center;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+}
