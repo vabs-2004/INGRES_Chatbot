@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./Components/LandingPage/LandingPage";
+import LandingPage from "./Components/LandingPage/LandingPage.jsx";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Chatbot from "./Components/chatbot/chatbot";
 import { useState } from "react";
